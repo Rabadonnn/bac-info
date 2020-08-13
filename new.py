@@ -15,10 +15,10 @@ int main()
 }}
 '''.format(project_name=sys.argv[2])
 
-os.system("mkdir " + sys.argv[1])
-os.system("mvim " + sys.argv[1] + "/main.cpp")
+os.system("mkdir source/" + sys.argv[1])
+os.system("mvim source/" + sys.argv[1] + "/main.cpp")
 
-with open(sys.argv[1] + "/main.cpp", "w") as file:
+with open("source/" + sys.argv[1] + "/main.cpp", "w") as file:
     file.write(program_string)
 
 os.system("python3 compile.py " + sys.argv[1])

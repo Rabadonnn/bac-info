@@ -7,6 +7,6 @@ import os
 
 project_name = sys.argv[1]
 
-command = "cd " + project_name + "&& clang++ main.cpp -o main && ./main && cd .."
+command = "cd source/" + project_name + "&& clang++ main.cpp -o main && ./main && cd .."
 
 os.system(command)
