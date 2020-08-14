@@ -16,7 +16,6 @@ int main()
 '''.format(project_name=sys.argv[2])
 
 os.system("mkdir source/" + sys.argv[1])
-os.system("mvim source/" + sys.argv[1] + "/main.cpp")
 
 with open("source/" + sys.argv[1] + "/main.cpp", "w") as file:
     file.write(program_string)
