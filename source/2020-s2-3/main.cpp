@@ -5,13 +5,18 @@ using namespace std;
 
 int main()
 {
-    cout << "-----\nbac !!! incomplete !!!\n-----\n" << endl;
+    cout << "-----\nbac\n-----\n" << endl;
 
     // declare matrix
     int size = 9;
     char a[size][size];
 
     // (REMEMBER) chars should be declared with single quotes '' not double quotes ""
+    
+
+    // explnation
+    // https://www.youtube.com/watch?v=ih5tQ4evgsQ 
+    // from 45:50 -> 51:00
 
     // populate matrix
     for (int i = 0; i < size; i++)
@@ -26,7 +31,7 @@ int main()
     {
         for (int j = 0; j < size; j++)
         {
-            if ( true /* place expression here */ )
+            if (i > j && i + j > size - 1)
             {
                 a[i][j] = '*';
             }
