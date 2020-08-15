@@ -1,2 +1,2 @@
-/papers linkuri subiecte / explicatii / teorii
-/sources rezolvari
+/papers => linkuri subiecte / explicatii / teorii
+/sources => rezolvari
