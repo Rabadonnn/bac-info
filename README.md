@@ -1,1 +1,2 @@
-Check /papers to find links to important topics including bac subjects
+/papers linkuri subiecte / explicatii / teorii
+/sources rezolvari
