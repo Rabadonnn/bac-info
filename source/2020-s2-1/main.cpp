@@ -15,7 +15,7 @@ int main()
 
     int c = 0;
 
-    do 
+    do
     {
         int b = a;
         int x = 0;
