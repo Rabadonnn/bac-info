@@ -12,10 +12,10 @@ int main()
     char a[size][size];
 
     // (REMEMBER) chars should be declared with single quotes '' not double quotes ""
-    
+
 
     // explnation
-    // https://www.youtube.com/watch?v=ih5tQ4evgsQ 
+    // https://www.youtube.com/watch?v=ih5tQ4evgsQ
     // from 45:50 -> 51:00
 
     // populate matrix
