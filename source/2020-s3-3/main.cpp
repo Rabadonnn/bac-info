@@ -15,6 +15,8 @@ int main()
 {
     cout << "-----\nbac\n-----\n" << endl;
 
+    // if you want to compile this on your machine
+    // remove "source/2020-s3-3/" from path
     ifstream bac_in("source/2020-s3-3/bac.in");
 
     int ar[1000000];
