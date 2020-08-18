@@ -10,7 +10,7 @@ using namespace std;
 
 int main()
 {{
-    cout << "-----\\n{project_name}\\n-----\\n" << endl;
+    cout << "----- {project_name} -----\\n" << endl;
     cout << "\\n----- END -----" << endl;
 }}
 '''.format(project_name=sys.argv[2])
