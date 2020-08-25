@@ -2,7 +2,6 @@
 
 using namespace std;
 
-
 int main()
 {
     cout << "-----\nbac\n-----\n" << endl;
@@ -13,8 +12,7 @@ int main()
 
     // (REMEMBER) chars should be declared with single quotes '' not double quotes ""
 
-
-    // explnation
+    // explanation
     // https://www.youtube.com/watch?v=ih5tQ4evgsQ
     // from 45:50 -> 51:00
 
