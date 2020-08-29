@@ -13,7 +13,7 @@ int main()
     cout << "----- {project_name} -----\\n" << endl;
     cout << "\\n----- END -----" << endl;
 }}
-'''.format(project_name=sys.argv[2])
+'''.format(project_name=sys.argv[1])
 
 os.system("mkdir source/" + sys.argv[1])
 
