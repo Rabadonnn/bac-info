@@ -1,29 +1,20 @@
 #include <iostream>
 
-void recursivity(int n, int &i, int &p)
+void recursivity(int n, int& i, int& p)
 {
-    if (n <= 9)
-    {
-        if (n % 2 == 0)
-        {
+    if (n <= 9) {
+        if (n % 2 == 0) {
             p = n;
             i = 0;
-        }
-        else
-        {
+        } else {
             p = 0;
             i = n;
         }
-    }
-    else
-    {
+    } else {
         recursivity(n / 10, i, p);
-        if (n % 2 == 0)
-        {
+        if (n % 2 == 0) {
             p = p * 10 + n % 10;
-        }
-        else 
-        {
+        } else {
             i = i * 10 + n % 10;
         }
     }

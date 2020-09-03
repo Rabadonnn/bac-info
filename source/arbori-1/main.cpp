@@ -2,11 +2,10 @@
 
 using namespace std;
 
-struct Node
-{
+struct Node {
     int data;
-    struct Node *left;
-    struct Node *right;
+    struct Node* left;
+    struct Node* right;
 };
 
 struct Node* createNode(int data)
@@ -22,8 +21,7 @@ struct Node* createNode(int data)
 
 void printPostOrder(struct Node* node)
 {
-    if (node == NULL)
-    {
+    if (node == NULL) {
         return;
     }
 
@@ -35,8 +33,7 @@ void printPostOrder(struct Node* node)
 
 void printInOrder(struct Node* node)
 {
-    if (node == NULL)
-    {
+    if (node == NULL) {
         return;
     }
 
@@ -49,8 +46,7 @@ void printInOrder(struct Node* node)
 
 void printPreOrder(struct Node* node)
 {
-    if (node == NULL)
-    {
+    if (node == NULL) {
         return;
     }
 
@@ -62,7 +58,8 @@ void printPreOrder(struct Node* node)
 
 int main()
 {
-    cout << "-----\nLearn c++ trees #1\n-----\n" << endl;
+    cout << "-----\nLearn c++ trees #1\n-----\n"
+         << endl;
 
     struct Node* root = createNode(1);
     root->right = createNode(3);

@@ -3,7 +3,7 @@
 using namespace std;
 
 /*
- * Subprogramul Egal are un parametru, n, prin care primește un număr natural cu 
+ * Subprogramul Egal are un parametru, n, prin care primește un număr natural cu
  * cel puțin o cifră impară. Subprogramul returnează valoarea 1 dacă toate
  * cifrele impare ale lui n sunt egale între ele sau valoarea 0 în caz contrar.
  */
@@ -19,28 +19,23 @@ using namespace std;
  *
  *  -> altfel
  *      -> daca ultima cifra impara si cifra curenta nu sunt egale returnam 0;
- * 
- * -> daca nu se intampla nimic in while, ajungem la cazul default si returnam 1;
+ *
+ * -> daca nu se intampla nimic in while, ajungem la cazul default si returnam
+ * 1;
  */
 
 int Egal(int n)
 {
     int last_odd_digit = 0;
-    while (n != 0)
-    {
+    while (n != 0) {
         int c = n % 10;
         n /= 10;
 
-        if (c % 2 == 1)
-        {
-            if (last_odd_digit == 0)
-            {
+        if (c % 2 == 1) {
+            if (last_odd_digit == 0) {
                 last_odd_digit = c;
-            }
-            else
-            {
-                if (c != last_odd_digit)
-                {
+            } else {
+                if (c != last_odd_digit) {
                     return 0;
                 }
             }
@@ -51,7 +46,8 @@ int Egal(int n)
 
 int main()
 {
-    cout << "-----\npbinfo\n-----\n" << endl;
+    cout << "-----\npbinfo\n-----\n"
+         << endl;
 
     cout << Egal(7274471) << endl;
 

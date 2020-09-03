@@ -4,12 +4,9 @@ using namespace std;
 
 void f(int i, int v[4])
 {
-    if (i >= 3)
-    {
+    if (i >= 3) {
         v[i] = v[i] + 1;
-    }
-    else
-    {
+    } else {
         f(i + 1, v);
     }
     cout << v[i] << endl;
@@ -17,7 +14,7 @@ void f(int i, int v[4])
 
 int main()
 {
-    int v[] = {0,2,0,1};
+    int v[] = { 0, 2, 0, 1 };
     f(0, v);
     return 0;
 }

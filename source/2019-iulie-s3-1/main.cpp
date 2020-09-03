@@ -1,16 +1,14 @@
-#include <iostream>
 #include <cmath>
+#include <iostream>
 
 using namespace std;
 
-void Impare(long &n)
+void Impare(long& n)
 {
     int i = 1;
 
-    while (i <= n)
-    {
-        if (n / i % 2 != 0)
-        {
+    while (i <= n) {
+        if (n / i % 2 != 0) {
             n -= i;
         }
         i *= 10;
@@ -19,7 +17,8 @@ void Impare(long &n)
 
 int main()
 {
-    cout << "----- 2019-iulie-s3-1 -----\n" << endl;
+    cout << "----- 2019-iulie-s3-1 -----\n"
+         << endl;
 
     long n = 235690;
     Impare(n);

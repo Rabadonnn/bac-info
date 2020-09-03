@@ -2,8 +2,10 @@
 
 using namespace std;
 
-int main() {
-    cout << "----- 2018-august-s2-5 -----\n" << endl;
+int main()
+{
+    cout << "----- 2018-august-s2-5 -----\n"
+         << endl;
 
     unsigned int n;
     cin >> n;

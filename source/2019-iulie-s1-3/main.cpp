@@ -4,7 +4,8 @@ using namespace std;
 
 int main()
 {
-    cout << "----- bac -----\n" << endl;
+    cout << "----- bac -----\n"
+         << endl;
 
     // 3b,
     // function strchr(c, sir) returneaza 1 daca c este inclus in sir

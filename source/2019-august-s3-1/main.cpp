@@ -10,8 +10,7 @@ unsigned int MaxImp(unsigned int a, unsigned int b)
     // inseamna ca parcurgem cu un for cu
     // i = a pana la i <= b
 
-    for (int i = a; i <= b; i++)
-    {
+    for (int i = a; i <= b; i++) {
         // produsul se initializeaza mereu cu 1
         // (suma cu 0)
         int produs_divizori = 1;
@@ -20,15 +19,12 @@ unsigned int MaxImp(unsigned int a, unsigned int b)
         // parcurgem pana la i / 2 pentru ca dupa nu mai avem divizori
         // mergem din 2 in 2 pentru a lua doar numerele impare
         // (3, 5, 7 ...)
-        for(int j = 3; j <= i / 2; j += 2)
-        {
-            if (i % j == 0)
-            {
+        for (int j = 3; j <= i / 2; j += 2) {
+            if (i % j == 0) {
                 produs_divizori *= j;
             }
         }
-        if (produs_divizori > i) 
-        {
+        if (produs_divizori > i) {
             result = i;
         }
     }
@@ -38,7 +34,8 @@ unsigned int MaxImp(unsigned int a, unsigned int b)
 
 int main()
 {
-    cout << "----- bac -----\n" << endl;
+    cout << "----- bac -----\n"
+         << endl;
 
     cout << MaxImp(14, 19) << endl;
 

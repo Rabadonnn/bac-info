@@ -1,5 +1,5 @@
-#include <iostream>
 #include <fstream>
+#include <iostream>
 
 using namespace std;
 
@@ -13,7 +13,8 @@ using namespace std;
 
 int main()
 {
-    cout << "-----\nbac\n-----\n" << endl;
+    cout << "-----\nbac\n-----\n"
+         << endl;
 
     // if you want to compile this on your machine
     // remove "source/2020-s3-3/" from path
@@ -21,17 +22,14 @@ int main()
 
     int ar[1000000];
 
-
     // vector de frecventa
     // cauta teoria
     int occurrences[1000];
 
     int x;
     int max_n = 0;
-    while (bac_in >> x)
-    {
-        if (x > max_n)
-        {
+    while (bac_in >> x) {
+        if (x > max_n) {
             max_n = x;
         }
         occurrences[x]++;
@@ -39,13 +37,10 @@ int main()
 
     int odd_occurences = 0;
 
-    for (int i = 0; i < max_n; i++)
-    {
-        if (occurrences[i] % 2 == 1)
-        {
+    for (int i = 0; i < max_n; i++) {
+        if (occurrences[i] % 2 == 1) {
             odd_occurences++;
-            if (odd_occurences > 1)
-            {
+            if (odd_occurences > 1) {
                 // keyword break termina forul
                 // optimization
                 break;
@@ -53,12 +48,9 @@ int main()
         }
     }
 
-    if (odd_occurences > 1)
-    {
+    if (odd_occurences > 1) {
         cout << "NU" << endl;
-    }
-    else
-    {
+    } else {
         cout << "DA" << endl;
     }
 

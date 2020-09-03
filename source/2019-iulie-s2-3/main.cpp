@@ -2,14 +2,12 @@
 
 using namespace std;
 
-struct punct
-{
+struct punct {
     float x;
     float y;
 };
 
-struct cerc
-{
+struct cerc {
     struct punct centru;
     float raza;
 } fig;
@@ -25,7 +23,8 @@ void print()
 
 int main()
 {
-    cout << "----- 2019-iulie-s2-3 -----\n" << endl;
+    cout << "----- 2019-iulie-s2-3 -----\n"
+         << endl;
 
     // sunt multe metode pentru a declara o structura
     // cred ca pentru bac cel mai bine se potriveste metoda 2
@@ -51,14 +50,7 @@ int main()
 
     // sau
 
-    fig =
-    (cerc){
-        .centru = (punct) {
-            .x = 0,
-            .y = 0
-        },
-        .raza = 1
-    };
+    fig = (cerc) { .centru = (punct) { .x = 0, .y = 0 }, .raza = 1 };
     print();
 
     cout << "\n----- END -----" << endl;

@@ -1,11 +1,12 @@
-#include <iostream>
 #include <fstream>
+#include <iostream>
 
 using namespace std;
 
 int main()
 {
-    cout << "----- bac -----\n" << endl;
+    cout << "----- bac -----\n"
+         << endl;
 
     // cerinta a spus ca numerele din fisier sunt
     // din intervalul [0, 1000];
@@ -19,37 +20,30 @@ int main()
 
     int n;
     ifstream bac_in("source/2019-august-s3-3/bac.txt");
-    while (bac_in >> n)
-    {
-        if (n % 2 == 0)
-        {
-            if (n > max_par) max_par = n;
+    while (bac_in >> n) {
+        if (n % 2 == 0) {
+            if (n > max_par)
+                max_par = n;
             frecventa_pare[n]++;
-        }
-        else
-        {
-            if (n > max_imp) max_imp = n;
+        } else {
+            if (n > max_imp)
+                max_imp = n;
             frecventa_impare[n]++;
         }
     }
 
-    for (int i = 1; i <= max_imp; i++)
-    {
-        for (int ap = 1; ap <= frecventa_impare[i]; ap++)
-        {
+    for (int i = 1; i <= max_imp; i++) {
+        for (int ap = 1; ap <= frecventa_impare[i]; ap++) {
             cout << i << " ";
         }
     }
 
-    for (int i = 1; i <= max_par; i++)
-    {
-        for (int ap = 1; ap <= frecventa_pare[i]; ap++)
-        {
+    for (int i = 1; i <= max_par; i++) {
+        for (int ap = 1; ap <= frecventa_pare[i]; ap++) {
             cout << i << " ";
         }
     }
     cout << endl;
-
 
     bac_in.close();
 

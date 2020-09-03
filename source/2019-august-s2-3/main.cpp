@@ -2,21 +2,20 @@
 
 using namespace std;
 
-struct punct
-{
+struct punct {
     int x;
     int y;
 } p;
 
-struct cerc
-{
+struct cerc {
     struct punct centru;
     float raza;
 } c;
 
 int main()
 {
-    cout << "----- bac -----\n" << endl;
+    cout << "----- bac -----\n"
+         << endl;
 
     c.centru.x = 10;
     c.centru.y = 15;

@@ -12,7 +12,7 @@ int recursive(int v[], int n)
 
 int main()
 {
-    int v[] = {4, 5, 6, 3, 2, 9};
+    int v[] = { 4, 5, 6, 3, 2, 9 };
     int n = 6;
 
     int r = recursive(v, n);

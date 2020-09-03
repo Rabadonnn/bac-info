@@ -4,8 +4,8 @@ using namespace std;
 
 /*
  * Given five positive integers, find the minimum and maximum values that
- * can be calculated by summing exactly four of the five integers. 
- * Then print the respective minimum and maximum values as a single 
+ * can be calculated by summing exactly four of the five integers.
+ * Then print the respective minimum and maximum values as a single
  * line of two space-separated long integers.
 
     Example
@@ -17,7 +17,8 @@ using namespace std;
 
 int main()
 {
-    cout << "-----\nhacker-rank mini-max-sum\n-----\n" << endl;
+    cout << "-----\nhacker-rank mini-max-sum\n-----\n"
+         << endl;
 
     int len = 5;
     int arr[] = { 1, 3, 5, 7, 9 };
@@ -28,14 +29,10 @@ int main()
     int min_n = arr[0];
     int max_n = arr[0];
 
-    for (int i = 0; i < len; i++)
-    {
-        if (arr[i] > max_n)
-        {
+    for (int i = 0; i < len; i++) {
+        if (arr[i] > max_n) {
             max_n = arr[i];
-        }
-        else if (arr[i] < min_n)
-        {
+        } else if (arr[i] < min_n) {
             min_n = arr[i];
         }
         min_sum += arr[i];

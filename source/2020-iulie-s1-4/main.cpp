@@ -3,11 +3,10 @@
 using namespace std;
 
 // Un   arbore   cu 10 noduri,   numerotate   de   la 1   la 10,
-// este   reprezentat   prin   vectorul   de   „tați” (7,5,6,5,7,0,6,3,3,8). 
-// Indicați numărul de noduri „frunză” ale acestui arbore. 
+// este   reprezentat   prin   vectorul   de   „tați” (7,5,6,5,7,0,6,3,3,8).
+// Indicați numărul de noduri „frunză” ale acestui arbore.
 
 // watch this https://www.youtube.com/watch?v=nxNMVElSFa0
-
 
 // frunzele in vectorul de tati sunt cele ale caror index nu se gaseste
 // in vectorul de tati
@@ -21,7 +20,9 @@ using namespace std;
 
 int main()
 {
-    cout << "-----\nfrunze din vector de tati\n-----\n" << endl;
-    cout << "Raspuns corect: " << "c) 5" << endl;
+    cout << "-----\nfrunze din vector de tati\n-----\n"
+         << endl;
+    cout << "Raspuns corect: "
+         << "c) 5" << endl;
     cout << "\n----- END -----" << endl;
 }

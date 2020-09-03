@@ -4,7 +4,8 @@ using namespace std;
 
 int main()
 {
-    cout << "----- 2019-iulie-s2-1 -----\n" << endl;
+    cout << "----- 2019-iulie-s2-1 -----\n"
+         << endl;
 
     int m;
     int n;
@@ -16,31 +17,27 @@ int main()
     int s1 = 0;
     int s2 = 0;
 
-    do
-    {
-        if (p % m == 0 || p % n == 0)
-        {
+    do {
+        if (p % m == 0 || p % n == 0) {
             s1 += 1;
         }
-        if (p % m == 0 && p % n == 0)
-        {
+        if (p % m == 0 && p % n == 0) {
             s2 += 1;
         }
         p += 1;
-    }
-    while (p <= q);
+    } while (p <= q);
 
     // while (p <= q)
     // {
-        // if (p % m == 0 || p % n == 0)
-        // {
-            // s1 += 1;
-        // }
-        // if (p % m == 0 && p % n == 0)
-        // {
-            // s2 += 1;
-        // }
-        // p += 1;
+    // if (p % m == 0 || p % n == 0)
+    // {
+    // s1 += 1;
+    // }
+    // if (p % m == 0 && p % n == 0)
+    // {
+    // s2 += 1;
+    // }
+    // p += 1;
     // }
 
     int s = s1 - 2 * s2;

@@ -4,7 +4,8 @@ using namespace std;
 
 int main()
 {
-    cout << "----- 2018-august-s1-2 -----\n" << endl;
+    cout << "----- 2018-august-s1-2 -----\n"
+         << endl;
 
     int n;
     cin >> n;
@@ -12,38 +13,34 @@ int main()
     int p = 1;
     int x = 0;
 
-    if (n < 0)
-    {
+    if (n < 0) {
         n = -n;
     }
 
-    do
-    {
+    do {
         int c = n % 10;
         n = n / 10;
-        if (c > m)
-        {
+        if (c > m) {
             m = c;
         }
 
         x = m * p + x;
         p *= 10;
-    }
-    while (n != 0);
+    } while (n != 0);
 
     // sau
 
     // while (n != 0)
     // {
-        // int c = n % 10;
-        // n = n / 10;
-        // if (c > m)
-        // {
-            // m = c;
-        // }
+    // int c = n % 10;
+    // n = n / 10;
+    // if (c > m)
+    // {
+    // m = c;
+    // }
 
-        // x = m * p + x;
-        // p *= 10;
+    // x = m * p + x;
+    // p *= 10;
     // }
     //
     //
