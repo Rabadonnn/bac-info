@@ -25,8 +25,6 @@ int main()
     with open("source/" + project_name + "/main.cpp", "w") as file:
         file.write(program_string)
 
-    os.system("python3 compile.py " + project_name)
-
 if sys.argv[1] == "-c":
     compile_project(sys.argv[2])
 elif sys.argv[1] == "-n":
