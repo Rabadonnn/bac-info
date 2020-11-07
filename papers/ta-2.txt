@@ -1,0 +1,2 @@
+barem: https://www.pbinfo.ro/resurse/9dc152/examene/2020/1-18/E_d_Informatica_2020_sp_MI_bar_test_02.pdf 
+subiect: https://www.pbinfo.ro/resurse/9dc152/examene/2020/1-18/E_d_Informatica_2020_sp_MI_C_var_test_02.pdf 
