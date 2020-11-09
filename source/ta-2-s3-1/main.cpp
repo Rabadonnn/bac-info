@@ -3,14 +3,10 @@
 using namespace std;
 
 void dfii(int n) {
-    for (int i = 0; i <= n; i++) {
-        for (int j = 0; j <= n; j++) {
+    for (int i = n; i >= 0; i--) {
+        for (int j = 0; j < i; j++) {
             if (i * j == n) {
-                if (i > j) {
-                    cout << "(" << i << " " << j << ")" << endl;
-                } else {
-                    cout << "(" << j << " " << i << ")" << endl;
-                }
+                cout << "(" << i << " " << j << ")" << endl;
             }
         }
     }
@@ -20,7 +16,7 @@ int main()
 {
     cout << "----- ta-2-s3-1 -----\n" << endl;
 
-    dfii(16);
+    dfii(32);
 
     cout << "\n----- END -----" << endl;
 }
