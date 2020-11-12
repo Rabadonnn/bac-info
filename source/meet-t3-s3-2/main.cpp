@@ -12,6 +12,9 @@ void numar(int n, int &m) {
         n /= 10;
     }
 
+    while (condition) {
+    }
+
     for (int i = 0; i < vlen; i++) {
         for (int j = 0; j < vlen; j++) {
             if (v[j] > v[j + 1]) {
