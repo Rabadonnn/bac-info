@@ -8,19 +8,18 @@ int main() {
    /*
     * 1. c
     *
-    * 2. --
+    * 2. d
     *
-    * 3.
-    *      a b c d e
+    * 3. d
+    *      [ a b c d e ]
     *
     *      aba abe aca
     *      ace ada ade
     *      eba [ ebe eca ece ] eda ede
-    * d
     *
-    * 4. --
+    * 4. c
     *
-    * 5.
+    * 5. b
     *      int f(int n) {
     *          if (n % 10 == 5) {
     *              return 2;
@@ -36,7 +35,7 @@ int main() {
     *      -> 2 * (2 * 2 * 2 * f(4 + 1))
     *
     *     -> 2 * 2 * 2 * 2 * 2
-    *      -> 32
+    *     -> 32
     */
 
    cout << "\n----- END -----" << endl;
