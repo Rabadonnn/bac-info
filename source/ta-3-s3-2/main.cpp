@@ -18,8 +18,7 @@ int main()
          } else if (i < diag) {
             a[i][j] = diag - i;
          } else if (i > diag) {
-            a[i][j] = ;
-            // [-]
+            a[i][j] = i - diag;
          }
          cout << a[i][j] << " ";
       }

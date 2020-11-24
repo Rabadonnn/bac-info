@@ -44,5 +44,5 @@ int main() {
    }
 
    bac.close();
-   cout << "\n----- END -----" << endl;
+   cout << endl << "\n----- END -----" << endl;
 }
