@@ -8,7 +8,7 @@ int main()
    cout << "----- ta-4-s3-3 -----\n" << endl;
    ifstream bacin("source/ta-4-s3-3/bac.in");
 
-   int frec[100] = {0};
+   int frec[101] = {0};
 
    int x;
    int max = 0;
@@ -19,7 +19,7 @@ int main()
       frec[x]++;
    }
 
-   for (int i = 0; i <= max; i++) {
+   for (int i = max; i >= 0; i--) {
       if (frec[i] == 2) {
          cout << i << " ";
       }
