@@ -15,8 +15,8 @@ using namespace std;
 
 int main()
 {{
-  cout << "--- {prj_name} ---\\n" << endl;
-  cout << "\\n--- END ---" << endl;
+  cout << "- {prj_name} -\\n" << endl;
+  cout << "\\n---" << endl;
 }}\
 '''.format(prj_name=project_name)
 
