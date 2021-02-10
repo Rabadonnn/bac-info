@@ -14,11 +14,10 @@ def new_project(project_name):
 using namespace std;
 
 int main()
-{{
-  cout << "- {prj_name} -\\n" << endl;
-  cout << "\\n---" << endl;
-}}\
-'''.format(prj_name=project_name)
+{
+
+}\
+'''
 
     os.system("mkdir source/" + project_name)
 
