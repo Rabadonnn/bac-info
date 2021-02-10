@@ -5,7 +5,6 @@ using namespace std;
 
 int main()
 {
-    cout << "----- 2018-spec-s2-5 -----\n"
          << endl;
 
     char text[] = "am 190 de nuci si 70 de castane";
@@ -32,6 +31,4 @@ int main()
     {
         cout << maxWord << endl;
     }
-
-    cout << "\n----- END -----" << endl;
 }

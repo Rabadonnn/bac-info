@@ -35,10 +35,7 @@ int f2(int x, int y)
 
 int main()
 {
-    cout << "----- 2018-spec-s3-1 -----\n" << endl;
 
     // b
     cout << f2(30, 50) << endl;
-
-    cout << "\n----- END -----" << endl;
 }

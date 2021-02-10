@@ -17,7 +17,6 @@ void f(int i, int j)
 
 int main()
 {
-    cout << "----- bac -----\n"
          << endl;
     f(75, 30);
 
@@ -29,6 +28,4 @@ int main()
    * note the variables with values to one side
    * and the instructions on the other side
    */
-
-    cout << "\n----- END -----" << endl;
 }

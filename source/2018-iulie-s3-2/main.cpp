@@ -17,13 +17,10 @@ void f(char ch, int x)
 
 int main()
 {
-    cout << "----- 2018-iulie-s3-2 -----\n" << endl;
 
     f('e', 5);
 
 
     // x poate fi orice numar >= 5
     // cauta cod ascii
-
-    cout << "\n----- END -----" << endl;
 }

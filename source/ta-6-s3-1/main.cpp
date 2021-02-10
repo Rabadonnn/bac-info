@@ -21,12 +21,9 @@ void prodprim(int n, int &p) {
 }
 
 int main() {
-  cout << "----- ta-6-s3-1 -----\n" << endl;
 
   int n = 2000;
   int p;
   prodprim(n, p);
   cout << p << endl;
-
-  cout << "\n----- END -----" << endl;
 }

@@ -14,7 +14,6 @@ void tablou(int n, int k, int* a) {
 
 int main()
 {
-  cout << "--- 2010-iulie-s3-2 ---\n" << endl;
   int n = 4;
   int k = 3;
   int a[n * k];
@@ -22,6 +21,4 @@ int main()
   for (int i = 0; i < n * k; i++) {
     cout << a[i] << " ";
   }
-  cout << endl;
-  cout << "\n--- END ---" << endl;
 }

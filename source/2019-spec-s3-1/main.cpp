@@ -24,10 +24,7 @@ int Egal(int n)
 
 int main()
 {
-    cout << "----- 2019-spec-s3-1 -----\n"
          << endl;
 
     cout << Egal(7240) << endl;
-
-    cout << "\n----- END -----" << endl;
 }

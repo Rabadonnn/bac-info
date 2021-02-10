@@ -4,7 +4,6 @@ using namespace std;
 
 int main()
 {
-    cout << "----- 2019-august-sn-s2-1 -----\n" << endl;
 
     int n;
     cin >> n;
@@ -45,6 +44,4 @@ int main()
     // 110
     // 1100
     // etc
-
-    cout << "\n----- END -----" << endl;
 }

@@ -29,6 +29,4 @@ int main()
 
     std::cout << "i: " << i << "\n";
     std::cout << "p: " << p << "\n";
-
-    return 0;
 }

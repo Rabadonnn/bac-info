@@ -4,7 +4,6 @@ using namespace std;
 
 int main()
 {
-    cout << "----- 2020-special-s2-3 -----\n" << endl;
 
     char m[7][7];
 
@@ -32,6 +31,4 @@ int main()
         }
         cout << endl;
     }
-
-    cout << "\n----- END -----" << endl;
 }

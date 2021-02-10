@@ -15,12 +15,9 @@ int f(int n)
 
 int main()
 {
-    cout << "----- bac -----\n"
          << endl;
 
     cout << f(6) << endl;
 
     // B
-
-    cout << "\n----- END -----" << endl;
 }

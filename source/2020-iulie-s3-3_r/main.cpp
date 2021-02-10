@@ -4,7 +4,6 @@
 using namespace std;
 
 int main() {
-  cout << "--- 2020-iulie-s3-3_r ---\n" << endl;
 
   ifstream bacin("source/2020-iulie-s3-3_r/bacin");
 
@@ -27,6 +26,4 @@ int main() {
   }
 
   cout << (palindrom ? "DA" : "NU") << endl;
-
-  cout << "\n--- END ---" << endl;
 }

@@ -32,9 +32,6 @@ unsigned int interval(unsigned int n)
 
 int main()
 {
-    cout << "----- 2018-august-s3-3 -----\n" << endl;
 
     cout << interval(8) << endl;
-
-    cout << "\n----- END -----" << endl;
 }

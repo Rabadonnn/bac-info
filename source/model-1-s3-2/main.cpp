@@ -4,7 +4,6 @@ using namespace std;
 
 int main()
 {
-    cout << "----- model-1-s3-2 -----\n" << endl;
 
     int n = 4;
     int k = 3;
@@ -22,6 +21,4 @@ int main()
         }
         cout << endl;
     }
-
-    cout << "\n----- END -----" << endl;
 }

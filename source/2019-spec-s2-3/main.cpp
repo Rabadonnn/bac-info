@@ -4,7 +4,6 @@ using namespace std;
 
 int main()
 {
-    cout << "----- 2019-spec-s2-3 -----\n" << endl;
 
     int a[5][5];
 
@@ -17,6 +16,4 @@ int main()
         }
         cout << endl;
     }
-
-    cout << "\n----- END -----" << endl;
 }

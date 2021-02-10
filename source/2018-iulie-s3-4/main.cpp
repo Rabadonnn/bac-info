@@ -5,7 +5,6 @@ using namespace std;
 
 int main()
 {
-    cout << "----- 2018-iulie-s3-4 -----\n" << endl;
 
     ifstream bacIn("source/2018-iulie-s3-4/bac.txt");
 
@@ -35,6 +34,4 @@ int main()
     }
 
     cout << result << endl;
-
-    cout << "\n----- END -----" << endl;
 }

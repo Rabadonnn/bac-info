@@ -4,7 +4,6 @@ using namespace std;
 
 int main()
 {
-    cout << "----- 2018-august-s3-2 -----\n" << endl;
 
     /*
      *      { stilou, pana, toc, creion, pensula }
@@ -20,6 +19,4 @@ int main()
      *   6. { toc, creion, pensula, pana, stilou }
      *   7. { toc, pensula, creion, stilou, pana }
      */
-
-    cout << "\n----- END -----" << endl;
 }

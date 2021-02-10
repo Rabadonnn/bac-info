@@ -4,7 +4,6 @@ using namespace std;
 
 int main()
 {
-    cout << "----- pbinfo -----\n"
          << endl;
 
     unsigned int v[5];
@@ -24,6 +23,4 @@ int main()
     }
 
     cout << v[4] + v[3] + v[2] << endl;
-
-    cout << "\n----- END -----" << endl;
 }

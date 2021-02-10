@@ -17,13 +17,10 @@ void Impare(long& n)
 
 int main()
 {
-    cout << "----- 2019-iulie-s3-1 -----\n"
          << endl;
 
     long n = 235690;
     Impare(n);
 
     cout << n << endl;
-
-    cout << "\n----- END -----" << endl;
 }

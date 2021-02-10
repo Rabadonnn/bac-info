@@ -4,7 +4,6 @@ using namespace std;
 
 int main()
 {
-    cout << "----- 2019-sim-s3-2 -----\n" << endl;
 
     const char *fullNames[4];
     fullNames[0] = "COLEGIUL";
@@ -44,6 +43,4 @@ int main()
     }
 
     cout << result << endl;
-
-    cout << "\n----- END -----" << endl;
 }

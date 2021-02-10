@@ -4,7 +4,6 @@ using namespace std;
 
 int main()
 {
-   cout << "----- ta-4-s2-1 -----\n" << endl;
 
    int n;
    cin >> n;
@@ -27,6 +26,4 @@ int main()
 
 
    // 3334
-
-   cout << "\n----- END -----" << endl;
 }

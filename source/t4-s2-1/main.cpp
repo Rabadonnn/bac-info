@@ -3,7 +3,6 @@
 using namespace std;
 
 int main() {
-   cout << "----- t4-s2-1 -----\n" << endl;
 
    // c.
    int x;
@@ -87,6 +86,4 @@ int main() {
       i--;
    }
    */
-
-   cout << "\n----- END -----" << endl;
 }

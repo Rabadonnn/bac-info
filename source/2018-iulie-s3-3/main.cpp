@@ -16,7 +16,4 @@ int resturi(int n, int x, int y, int r)
 
 int main()
 {
-    cout << "----- 2018-iulie-s3-3 -----\n" << endl;
-    cout << resturi(200, 5, 14, 2) << endl;
-    cout << "\n----- END -----" << endl;
 }

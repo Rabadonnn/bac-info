@@ -16,7 +16,6 @@ void f(int m, int n, int d)
 
 int main()
 {
-    cout << "----- 2019-spec-s1 -----\n" << endl;
 
     // 1. c
     
@@ -25,6 +24,4 @@ int main()
     // 3. a
     
     // 4 - 5. invata arbori grafuri bai caine
-
-    cout << "\n----- END -----" << endl;
 }

@@ -14,7 +14,6 @@ struct cerc {
 
 int main()
 {
-    cout << "----- bac -----\n"
          << endl;
 
     c.centru.x = 10;
@@ -25,6 +24,4 @@ int main()
     int expresie = c.centru.x == p.x && c.centru.y == p.y;
 
     cout << expresie << endl;
-
-    cout << "\n----- END -----" << endl;
 }

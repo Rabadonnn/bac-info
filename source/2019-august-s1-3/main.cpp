@@ -4,7 +4,6 @@ using namespace std;
 
 int main()
 {
-    cout << "----- bac -----\n"
          << endl;
 
     /*
@@ -32,6 +31,4 @@ int main()
    *      2. pastram primele 2, schimbam frisca cu vanilie
    *      -> continuam
    */
-
-    cout << "\n----- END -----" << endl;
 }

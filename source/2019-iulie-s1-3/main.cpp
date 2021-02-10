@@ -4,7 +4,6 @@ using namespace std;
 
 int main()
 {
-    cout << "----- bac -----\n"
          << endl;
 
     // 3b,
@@ -13,6 +12,4 @@ int main()
     // x == a || x == e || x == i etc
     // a e i o u nu sunt in ghilimele
     // pentru char se folosesc '' iar pentru string ""
-
-    cout << "\n----- END -----" << endl;
 }

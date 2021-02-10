@@ -5,7 +5,6 @@ using namespace std;
 
 int main()
 {
-    cout << "----- ta-2-s3-3 -----\n" << endl;
     ifstream bacin("source/ta-2-s3-3/bac.in");
 
     int result[3] = {0};
@@ -25,6 +24,4 @@ int main()
     }
     cout << endl;
 
-    bacin.close();
-    cout << "\n----- END -----" << endl;
 }

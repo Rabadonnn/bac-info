@@ -4,7 +4,6 @@ using namespace std;
 
 int main()
 {
-    cout << "----- bac -----\n"
          << endl;
 
     /*
@@ -17,6 +16,4 @@ int main()
    *               /   \
    *             (4)   (5)
    */
-
-    cout << "\n----- END -----" << endl;
 }

@@ -5,7 +5,6 @@ using namespace std;
 
 int main()
 {
-    cout << "----- ta-2-s3-2 -----\n" << endl;
 
     char text[] = "2,7 minus 3,5 minus 2 egal 2,7 plus -3,5 plus -2 egal -0.2 rezultat";
 
@@ -22,6 +21,4 @@ int main()
     }
 
     cout << result << endl;
-
-    cout << "\n----- END -----" << endl;
 }

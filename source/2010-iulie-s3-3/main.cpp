@@ -3,7 +3,6 @@
 using namespace std;
 
 int main() {
-  cout << "--- 2010-iulie-s3-3 ---\n" << endl;
 
   int a[] = {1, 1, 2, 2, 2, 7, 10, 10, 10, 10, 24};
   int freq[10000];
@@ -25,6 +24,4 @@ int main() {
   }
 
   cout << endl;
-
-  cout << "\n--- END ---" << endl;
 }

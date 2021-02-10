@@ -4,7 +4,6 @@ using namespace std;
 
 int main()
 {
-   cout << "----- ta-4-s3-2 -----\n" << endl;
 
    int v[3][6] = {
       { 1, 1, 0, 0, 1, 0},
@@ -28,6 +27,4 @@ int main()
    }
 
    cout << result << endl;
-
-   cout << "\n----- END -----" << endl;
 }

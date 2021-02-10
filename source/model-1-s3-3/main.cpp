@@ -14,7 +14,6 @@ int f(int n)
 
 int main()
 {
-   cout << "----- model-1-s3-3 -----\n"
         << endl;
 
    int a = 89;
@@ -33,6 +32,4 @@ int main()
    {
       cout << f(i) << " ";
    }
-
-   cout << "\n----- END -----" << endl;
 }

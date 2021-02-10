@@ -15,9 +15,6 @@ int numarare(int n, int m) {
 }
 
 int main() {
-   cout << "----- t4-s3-2 -----\n" << endl;
 
    cout << numarare(7, 56) << endl;
-
-   cout << "\n----- END -----" << endl;
 }

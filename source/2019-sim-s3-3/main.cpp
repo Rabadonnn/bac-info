@@ -5,7 +5,6 @@ using namespace std;
 
 int main()
 {
-    cout << "----- 2019-sim-s3-3 -----\n" << endl;
 
     ifstream bacIn("source/2019-sim-s3-3/bacIn.txt");
 
@@ -42,6 +41,4 @@ int main()
     } else {
         cout << "NU" << endl;
     }
-
-    cout << "\n----- END -----" << endl;
 }

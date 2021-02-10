@@ -5,7 +5,6 @@ using namespace std;
 
 int main()
 {
-    cout << "----- 2020-august-s3-2 -----\n" << endl;
 
     // citim propozitia
     char sentence[100];
@@ -51,6 +50,4 @@ int main()
     } else {
         cout << "nu exista" << endl;
     }
-
-    cout << "\n----- END -----" << endl;
 }

@@ -8,7 +8,6 @@ using namespace std;
 
 int main()
 {
-    cout << "-----\nbac\n-----\n"
          << endl;
 
     int a;
@@ -30,6 +29,4 @@ int main()
         cout << x << " ";
         c += 2;
     } while (c < 10);
-
-    cout << "\n----- END -----" << endl;
 }

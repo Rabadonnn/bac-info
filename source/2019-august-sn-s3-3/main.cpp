@@ -5,7 +5,6 @@ using namespace std;
 
 int main()
 {
-    cout << "----- 2019-august-sn-s3-3 -----\n" << endl;
 
     ifstream bacIn("source/2019-august-sn-s3-3/bac-in.txt");
 
@@ -33,6 +32,4 @@ int main()
         }
     }
     cout << endl;
-
-    cout << "\n----- END -----" << endl;
 }

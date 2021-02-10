@@ -58,7 +58,6 @@ void printPreOrder(struct Node* node)
 
 int main()
 {
-    cout << "-----\nLearn c++ trees #1\n-----\n"
          << endl;
 
     struct Node* root = createNode(1);
@@ -72,6 +71,4 @@ int main()
     printPreOrder(root);
 
     cout << "\n\n----- END -----" << endl;
-
-    return 0;
 }

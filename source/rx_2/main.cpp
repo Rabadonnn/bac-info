@@ -4,7 +4,6 @@
 using namespace std;
 
 int main() {
-  cout << "--- rx_2 ---\n" << endl;
 
   char text[] = "el prefera sa mearga la schi";
   char vowels[] = "aeiou";
@@ -58,6 +57,4 @@ int main() {
   } else {
     cout << "nu exista" << endl;
   }
-
-  cout << "\n--- END ---" << endl;
 }

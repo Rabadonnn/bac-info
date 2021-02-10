@@ -4,7 +4,6 @@ using namespace std;
 
 int main()
 {
-    cout << "----- 2018-spec-s1-2 -----\n"
          << endl;
 
     int n;
@@ -53,6 +52,4 @@ int main()
     }
 
     cout << nr << endl;
-
-    cout << "\n----- END -----" << endl;
 }

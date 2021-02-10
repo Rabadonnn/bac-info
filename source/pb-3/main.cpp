@@ -13,7 +13,6 @@ using namespace std;
 // cuproprietatea cerută (2∙6=3∙4=12și 2∙4=1∙8=8
 
 int main() {
-  cout << "----- pb-3 -----\n" << endl;
 
   int p1 = 12;
   int p2 = 8;
@@ -37,6 +36,4 @@ int main() {
   }
 
   cout << endl << "Found: " << found << endl;
-
-  cout << "\n----- END -----" << endl;
 }

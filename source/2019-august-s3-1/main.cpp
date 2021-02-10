@@ -34,10 +34,7 @@ unsigned int MaxImp(unsigned int a, unsigned int b)
 
 int main()
 {
-    cout << "----- bac -----\n"
          << endl;
 
     cout << MaxImp(14, 19) << endl;
-
-    cout << "\n----- END -----" << endl;
 }

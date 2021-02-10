@@ -16,9 +16,6 @@ unsigned int f(unsigned int n) {
 
 int main()
 {
-    cout << "----- 2018-august-s3-4 -----\n" << endl;
 
     f(80);
-
-    cout << "\n----- END -----" << endl;
 }
