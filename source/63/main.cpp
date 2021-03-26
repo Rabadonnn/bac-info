@@ -2,20 +2,47 @@
 
 using namespace std;
 
-int main() {
-  int n = 4;
-  int a[n][n];
+int main()
+{
+    cout << "----- 2019-iulie-s2-1 -----\n"
+         << endl;
 
-  int c = 0;
-  for (int i = 0; i < n; i++) {
-    for (int j = 0; j < n; j++) {
-      c += 2;
-      if (c % 3 == 0) {
-        c += 2;
-      }
-      a[i][j] = c;
-      cout << a[i][j] << " ";
-    }
-    cout << endl;
-  }
+    int m;
+    int n;
+    int p;
+    int q;
+
+    cin >> m >> n >> p >> q;
+
+    int s1 = 0;
+    int s2 = 0;
+
+    do {
+        if (p % m == 0 || p % n == 0) {
+            s1 += 1;
+        }
+        if (p % m == 0 && p % n == 0) {
+            s2 += 1;
+        }
+        p += 1;
+    } while (p <= q);
+
+    // while (p <= q)
+    // {
+    // if (p % m == 0 || p % n == 0)
+    // {
+    // s1 += 1;
+    // }
+    // if (p % m == 0 && p % n == 0)
+    // {
+    // s2 += 1;
+    // }
+    // p += 1;
+    // }
+
+    int s = s1 - 2 * s2;
+
+    cout << s << endl;
+
+    cout << "\n----- END -----" << endl;
 }

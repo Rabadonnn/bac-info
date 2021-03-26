@@ -1,19 +1,31 @@
-#include <cstring>
 #include <iostream>
 
 using namespace std;
 
+void f(int i, int j)
+{
+    cout << i << " ";
+    if (i != j) {
+        if (i < j) {
+            i = i + j;
+            j = i - j;
+            i = i - j;
+        }
+        f(i - j, j);
+    }
+}
+
 int main()
 {
-  char text[] = "Modul de -3,24 este 3,24 si modul de -15 este 15";
-  char result[100];
+         << endl;
+    f(75, 30);
 
-  int j = 0;
-  for (int i = 0; i < strlen(text); i++) {
-    if (text[i] != '-') {
-      result[j++] = text[i];
-    }
-  }
+    // Correct answer: (C)
 
-  cout << result << endl;
+    /*
+   * on subjects like this
+   * you should take the program step by step like a compiler
+   * note the variables with values to one side
+   * and the instructions on the other side
+   */
 }

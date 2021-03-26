@@ -2,21 +2,29 @@
 
 using namespace std;
 
-// https://www.modinfo.ro/bac/variante-test-info/v11.pdf s2 3
+int main()
+{
+    cout << "----- 2018-iulie-s2-4 -----\n" << endl;
 
-int main() {
-  int a[7][7] = {{1, 8, 3, 9, 6, 5, 5}, {0, 7, 4, 2, 5, 5, 4},
-                 {8, 6, 3, 5, 1, 2, 3}, {2, 4, 9, 4, 8, 3, 4},
-                 {2, 1, 7, 5, 5, 5, 6}, {7, 4, 2, 4, 9, 2, 7},
-                 {0, 9, 6, 3, 1, 7, 2}};
+    int a[9][9];
 
-  int p = 1;
-  for (int i = 0; i < 7; i++) {
-    p *= a[i][i];
-  }
+    for (int i = 0; i < 9; i++) {
+        for (int j = 0; j < 9; j++) {
+            if (i == j || i == 9 - j - 1) {
 
-  for (int i = 6; i >= 0; i--) {
-    cout << p << " ";
-    p /= a[i][i];
-  }
+                a[i][j] = 0;
+            } else {
+                a[i][j] = (i + j) % 8;
+            }
+        }
+    }
+
+    for (int i = 0; i < 9; i++) {
+        for (int j = 0; j < 9; j++) {
+            cout << a[i][j] << " ";
+        }
+        cout << endl;
+    }
+
+    cout << "\n----- END -----" << endl;
 }

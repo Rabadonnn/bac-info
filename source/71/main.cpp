@@ -2,25 +2,28 @@
 
 using namespace std;
 
-int main() {
-  int m;
-  int n;
-  cin >> m >> n;
-  int sala[m][n];
-
-  for (int i = 0; i < m; i++) {
-    for (int j = 0; j < n; j++) {
-      cin >> sala[i][j];
+int f(int n, int d)
+{
+    if (d * d > n) {
+        return 0;
     }
-  }
 
-  for (int i = 0; i < m; i++) {
-    for (int j = 0; j < n; j++) {
-      bool gasit = false;
-      if (sala[i][0] != 0 && sala[i][0] == sala[j][n - 1] && !gasit) {
-        cout << sala[i][0] << " ";
-        gasit = true;
-      }
+    if (d * d == n) {
+        return 1;
     }
-  }
+
+    if (n % d == 0) {
+        return 2 + f(n, d + 1);
+    }
+
+    return f(n, d + 1);
+}
+
+int main()
+{
+    cout << "----- 2019-sim-s1-3 -----\n" << endl;
+
+    cout << f(2019, 1) << endl;
+
+    cout << "\n----- END -----" << endl;
 }

@@ -1,25 +1,40 @@
 #include <iostream>
+#include <stdlib.h>
 
 using namespace std;
 
-void perechi(unsigned n) {
-  int found = 0;
-
-  for (int i = 1; i <= n; i += 2) {
-    for (int j = 2; j <= n; j += 2) {
-      if (i * j == n) {
-        cout << "[" << i << " " << j << "]" << " ";
-        found = 1;
-      }
-    }
-  }
-
-  if (!found) {
-    cout << "nu exista" << endl;
-  }
-}
-
 int main()
 {
-  perechi(12);
+    cout << "----- bac 2019 august s1 - 1 (explained) -----\n"
+         << endl;
+
+    int a = 'm' < 'n';
+    int b = 'm' == 'M';
+    int c = 'M' == 'm' + 'N' - 'n';
+    int d = 'N' == 'M' + 1;
+
+    cout << a << endl;
+    cout << b << endl;
+    cout << c << endl;
+    cout << d << endl;
+
+    cout << endl;
+    // (B)
+    //
+    // check this out for explanations
+    // https://stackoverflow.com/questions/22736348/char-comparison-in-c
+
+    cout << (int)'m' << " " << (int)'M';
+    // returns 109 77
+
+    /*
+   * every char is basically an integer in ASCII code
+   * if we convert 'm' and 'M' to integers 'M' is not equal to 'n'
+   * so:
+   *
+   *  (B) is the only condition that returns false
+   */
+
+    cout << endl;
+    cout << "\n----- END -----" << endl;
 }

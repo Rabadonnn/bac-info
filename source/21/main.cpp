@@ -1,20 +1,13 @@
-#include <cstring>
 #include <iostream>
 
 using namespace std;
 
-int main() {
-  char text[] = "ABIA aSTept sa Merg lA scoala";
+int main()
+{
+    cout << "----- 2018-iulie-s3-1 -----\n" << endl;
 
-  for (int i = 0; i < strlen(text); i++) {
-    if (text[i] == ' ') {
-      i++;
-      text[i] = toupper(text[i]);
-    } else {
-      text[i] = tolower(text[i]);
-    }
-  }
-  text[0] = toupper(text[0]);
+    // a. Java c#, la astea tre sa intelegi sistemu prin care se
+    // genereaza, cum? jabar n am
 
-  cout << text << endl;
+    cout << "\n----- END -----" << endl;
 }

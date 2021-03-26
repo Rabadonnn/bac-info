@@ -1,35 +1,35 @@
-#include <cstring>
 #include <iostream>
+#include <fstream>
 
 using namespace std;
 
-int main() {
-  char text[] =
-      "cuvantul consoane are un numar de patru vocale si patru consoane";
-  char vocale[] = "aeiou";
+int main()
+{
 
-  int result = 0;
+    ifstream bacIn("source/2019-august-sn-s3-3/bac-in.txt");
 
-  char *cuvant = strtok(text, " ");
+    int frecventa[1000] = { 0 };
 
-  while (cuvant) {
-    int v = 0;
-    int c = 0;
-
-    for (int i = 0; i < strlen(cuvant); i++) {
-      if (strchr(vocale, cuvant[i]) != NULL) {
-        v++;
-      } else {
-        c++;
-      }
+    int x;
+    int max = 0;
+    while (bacIn >> x)
+    {
+        if (x % 2 == 0)
+        {
+            frecventa[x]++;
+            if (x > max)
+            {
+                max = x;
+            }
+        }
     }
 
-    if (v == c) {
-      result++;
+    for (int i = 0; i <= max; i++)
+    {
+        for (int j = 0; j < frecventa[i]; j++)
+        {
+            cout << i << " ";
+        }
     }
-
-    cuvant = strtok(NULL, " ");
-  }
-
-  cout << result << endl;
+    cout << endl;
 }

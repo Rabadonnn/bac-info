@@ -2,26 +2,22 @@
 
 using namespace std;
 
+int step = 0;
+int f(int n)
+{
+    cout << step++ << ": " << n << endl;
+    if (n <= 2)
+        return n;
+    if (n % 2 == 1)
+        return f(n - 2) - f(n - 1);
+    return f(n - 1) - f(n - 2);
+}
+
 int main()
 {
-  int n = 4;
-  int k = 3;
+         << endl;
 
-  int a[n][n * k];
+    cout << f(6) << endl;
 
-  for (int i = 0; i < n; i++) {
-    int m = 0;
-    for (int j = 0; j < n; j++) {
-      for (int l = 0; l < k; l++) {
-        a[i][m++] = j + 1 + i;
-      }
-    }
-  }
-
-  for (int i = 0; i < n; i++) {
-    for (int j = 0; j < n * k; j++) {
-      cout << a[i][j] << " ";
-    }
-    cout << endl;
-  }
+    // B
 }

@@ -1,24 +1,52 @@
-#include <cstring>
 #include <iostream>
 
 using namespace std;
 
-int main() {
+int main()
+{
+    cout << "----- 2018-august-s1-2 -----\n"
+         << endl;
 
-  char text[] = "Fat Frumos este cel mai viteaz";
-  int n = 6;
-  int gasit = 0;
+    int n;
+    cin >> n;
+    int m = 0;
+    int p = 1;
+    int x = 0;
 
-  char *cuvant = strtok(text, " ");
-  while (cuvant) {
-    if (strlen(cuvant) == n) {
-      cout << cuvant << endl;
-      gasit = 1;
+    if (n < 0) {
+        n = -n;
     }
-    cuvant = strtok(NULL, " ");
-  }
 
-  if (gasit == 0) {
-    cout << "nu exista" << endl;
-  }
+    do {
+        int c = n % 10;
+        n = n / 10;
+        if (c > m) {
+            m = c;
+        }
+
+        x = m * p + x;
+        p *= 10;
+    } while (n != 0);
+
+    // sau
+
+    // while (n != 0)
+    // {
+    // int c = n % 10;
+    // n = n / 10;
+    // if (c > m)
+    // {
+    // m = c;
+    // }
+
+    // x = m * p + x;
+    // p *= 10;
+    // }
+    //
+    //
+    // oricare dintre: 722 -722 712 -712 702 -702
+
+    cout << x << endl;
+
+    cout << "\n----- END -----" << endl;
 }

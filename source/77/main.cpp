@@ -2,30 +2,33 @@
 
 using namespace std;
 
+void inserare(int &n)
+{
+    int k = 1;
+    int v[15];
+
+    while (n != 0) {
+        v[k++] = n % 10;
+        n /= 10;
+    }
+
+    for (int i = k - 1; i >= 2; i--) {
+        n = n * 10 + v[i];
+        n = n * 10 + abs(v[i] - v[i - 1]);
+    }
+
+    n = n * 10 + v[1];
+}
+
+
 int main()
 {
-  int m;
-  int n;
-  cin >> m >> n;
-  int a[m][n];
+    cout << "----- 2019-sim-s3-1 -----\n" << endl;
 
-  for (int i = 0; i < m; i++) {
-    for (int j = 0; j < n; j++) {
-      cin >> a[i][j];
-    }
-  }
+    int n = 7255;
+    inserare(n);
+    cout << n << endl;
 
-  for (int i = 0; i < m; i++) {
-    int max = -1;
-    for (int j = 0; j < n; j++) {
-      if (a[i][j] < 21 && a[i][j] > max) {
-        max = a[i][j];
-      }
-    }
-    if (max == -1) {
-      cout << "nu exista" << endl;
-    } else {
-      cout << max << endl;
-    }
-  }
+
+    cout << "\n----- END -----" << endl;
 }

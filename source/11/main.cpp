@@ -2,19 +2,21 @@
 
 using namespace std;
 
-void triplete(unsigned int n) {
-  for (int z = 0; z <= n; z++) {
-    for (int y = 0; y < z; y++) {
-      for (int x = 0; x < y; x++) {
-        if (x * y + y * z == n) {
-          cout << "(" << x << ", " << y << ", " << z << ")" << endl;
-        }
-      }
-    }
-  }
-}
-
 int main()
 {
-  triplete(8);
+
+    /*
+     *      { stilou, pana, toc, creion, pensula }
+     *
+     *   -> creionul precede pensula si pana
+     *
+     *   1. { toc, creion, stilou, pana, pensula }
+     *   2. { toc, creion, stilou, pensula, pana }
+     *   3. { toc, creion, pana, stilou, pensula }
+     *   4. { toc, creion, pana, pensula, stilou }
+     *   5. { toc, creion, pensula, stilou, pana }
+     *
+     *   6. { toc, creion, pensula, pana, stilou }
+     *   7. { toc, pensula, creion, stilou, pana }
+     */
 }

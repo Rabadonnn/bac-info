@@ -1,31 +1,26 @@
-#include <fstream>
 #include <iostream>
 
 using namespace std;
 
-int main() {
-  ifstream bacin("source/51/bac.in");
+int main()
+{
+    cout << "----- 2019-august-sn-s1-5 -----\n" << endl;
 
-  int frec[100] = {0};
-  int x;
-  while (bacin >> x) {
-    if (x > 9 && x < 100) {
-      frec[x]++;
+    int n = 7;
+    int ok = 1;
+    int d = 2;
+
+    while (ok == 1 && d * d >= n)
+    {
+        if (n % d == 0)
+        {
+            ok = 0;
+        }
+        else
+        {
+            d++;
+        }
     }
-  }
 
-  int found = 0;
-  for (int i = 99; i >= 10; i--) {
-    if (frec[i] == 0 && i % 11 != 0) {
-      found = 1;
-      cout << i << endl;
-      break;
-    }
-  }
-
-  if (!found) {
-    cout << "nu exista" << endl;
-  }
-
-  bacin.close();
+    cout << "\n----- END -----" << endl;
 }

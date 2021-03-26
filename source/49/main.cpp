@@ -4,24 +4,7 @@ using namespace std;
 
 int main()
 {
-  int n = 4;
-  int x = 15;
-
-  int i = x;
-  int found = 0;
-
-  while (found < n) {
-    if (i % x == 0) {
-      found++;
-    }
-    i++;
-  }
-
-  while (found > 0) {
-    if (i % x == 0) {
-      found--;
-      cout << i << " ";
-    }
-    i--;
-  }
+    cout << "----- 2019-august-sn-s1-3 -----\n" << endl;
+    // invata cautare binara
+    cout << "\n----- END -----" << endl;
 }

@@ -2,26 +2,21 @@
 
 using namespace std;
 
-void perfect(unsigned int a, unsigned int b) {
-  int gasit = 0;
-  for (int i = a; i <= b; i++) {
-    int s = 0;
-    for (int j = 1; j <= i / 2; j++) {
-      if (i % j == 0) {
-        s += j;
-      }
+void f(int n)
+{
+    cout << n % 2;
+
+    if (n>=3) {
+        f(n - 3);
     }
-    if (s == i) {
-      cout << i << " ";
-      gasit = 1;
-    }
-  }
-  if (!gasit) {
-    cout << "nu exista" << endl;
-  }
 }
 
 int main()
 {
-  perfect(5, 30);
+    cout << "----- 2018-august-s3-1 -----\n" << endl;
+
+    f(7);
+
+    cout << "\n----- END -----" << endl;
 }
+

@@ -1,60 +1,34 @@
-#include <cstring>
 #include <iostream>
 
 using namespace std;
 
-int main() {
+int main()
+{
+    cout << "-----\nbac\n-----\n"
+         << endl;
 
-  char text[] = "el prefera sa mearga la schi";
-  char vowels[] = "aeiou";
+    int n;
+    cin >> n;
 
-  char word[4];
-  word[3] = '\n';
+    int k = 0;
+    int i = 0;
 
-  char *token = strtok(text, " ");
+    do {
+        int x;
+        cin >> x;
+        int y = 2;
 
-  int currWord = 0;
-  bool foundWord = true;
-  while (token) {
-
-    if (currWord == 0 || currWord == 1) {
-      bool found = true;
-      for (int i = 0; i < strlen(token); i++) {
-        if (currWord == 0) {
-          if (strchr(text, token[i]) == NULL) {
-            found = true;
-            word[0] = token[i];
-            break;
-          }
-        } else if (currWord == 1) {
-          if (strchr(vowels, token[i])) {
-            found = true;
-            word[0] = token[i];
-            break;
-          }
+        while (x > 1 && x % y != 0) {
+            y++;
         }
-      }
 
-      if (!found) {
-        foundWord = false;
-        break;
-      }
-    }
+        if (k < x / y) {
+            k = x / y;
+        }
+        i++;
+    } while (i < n);
 
-    char *newToken = strtok(NULL, " ");
-    if (newToken) {
-      currWord++;
-      token = newToken;
-    }
-  }
+    cout << k << endl;
 
-  if (currWord > 2) {
-    word[2] = token[strlen(token) - 1];
-  }
-
-  if (foundWord) {
-    cout << word << endl;
-  } else {
-    cout << "nu exista" << endl;
-  }
+    cout << "\n----- END -----" << endl;
 }

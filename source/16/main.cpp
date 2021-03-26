@@ -2,25 +2,23 @@
 
 using namespace std;
 
-int main() {
-  int n = 4;
-  int a[] = {7, 2, 5, 3};
-  int b[n][n];
+struct medicament
+{
+    float pret;
+    struct
+    {
+        int cod;
+        int doza;
+    } substanta;
+} m[20];
 
-  for (int i = 0; i < n; i++) {
-    for (int j = 0; j < n; j++) {
-      if (j % 2 == 1) {
-        b[i][j] = a[i];
-      } else {
-        b[i][j] = a[n - i - 1];
-      }
-    }
-  }
+int main()
+{
+    cout << "----- 2018-iulie-s2-1 -----\n" << endl;
 
-  for (int i = 0; i < n; i++) {
-    for (int j = 0; j < n; j++) {
-      cout << b[i][j] << " ";
-    }
-    cout << endl;
-  }
+    // rapsuns
+    // c.
+    m[0].substanta.cod;
+
+    cout << "\n----- END -----" << endl;
 }

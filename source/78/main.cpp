@@ -2,41 +2,45 @@
 
 using namespace std;
 
-void putere(int n, int &d, int &p) {
-  int maxp = 0;
-  d = 0;
-  for (int i = 2; i <= n / 2; i++) {
-    bool prim = true;
-    for (int j = 2; j <= i / 2; j++) {
-      if (i % j == 0) {
-        prim = false;
-        break;
-      }
-    }
-    if (prim) {
-      p = 0;
-      int x = n;
-      while (x) {
-        if (x % i == 0) {
-          x /= i;
-          p++;
-        } else {
-          break;
-        }
-      }
-      if (p >= maxp && i > d) {
-        maxp = p;
-        d = i;
-      }
-    }
-  }
-  p = maxp;
-}
+int main()
+{
 
-int main() {
-  int n = 10780;
-  int d;
-  int p;
-  putere(n, d, p);
-  cout << d << " " << p << endl;
+    const char *fullNames[4];
+    fullNames[0] = "COLEGIUL";
+    fullNames[1] = "LICEUL";
+    fullNames[2] = "NATIONAL";
+    fullNames[3] = "TEORETIC";
+
+    const char *abbreviations[4];
+    abbreviations[0] = "COLEG.";
+    abbreviations[1] = "LIC.";
+    abbreviations[2] = "NAT.";
+    abbreviations[3] = "TEOR.";
+
+    char text[] = "COLEG. NAT. DE INFORMATICA";
+
+    char *token = strtok(text, " ");
+
+    char result[100];
+
+    while (token) {
+
+        int n = strlen(result);
+
+        bool found = false;
+        for (int i = 0; i < 4; i++) {
+            if (strcmp(token, abbreviations[i]) == 0) {
+                found = true;
+                sprintf(&result[n], "%s ", fullNames[i]);
+                break;
+            }
+        }
+        if (!found) {
+            sprintf(&result[n], "%s ", token);
+        }
+
+        token = strtok(NULL, " ");
+    }
+
+    cout << result << endl;
 }

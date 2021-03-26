@@ -5,27 +5,47 @@ using namespace std;
 
 int main()
 {
-  ifstream bacin("source/46/bac.txt");
-  int n;
-  bacin >> n;
-  int a[n];
-  int nrTermeni = 0;
-  for (int i = 0; i < n; i++) {
-    bacin >> a[i];
-  }
-  int x;
-  while (bacin >> x) {
-    for (int i = 0; i < n; i++) {
-      if (a[i] > x) {
-        nrTermeni++;
-        break;
-      } else if (a[i] == x) {
-        break;
-      }
+    cout << "----- bac -----\n"
+         << endl;
+
+    // cerinta a spus ca numerele din fisier sunt
+    // din intervalul [0, 1000];
+
+    // vezi vectori de frecventa
+    // sintaza asta initializeaza fiecare element din vector cu 0
+    int frecventa_pare[1001] = { 0 };
+    int frecventa_impare[1001] = { 0 };
+    int max_par = -1;
+    int max_imp = -1;
+
+    int n;
+    ifstream bac_in("source/2019-august-s3-3/bac.txt");
+    while (bac_in >> n) {
+        if (n % 2 == 0) {
+            if (n > max_par)
+                max_par = n;
+            frecventa_pare[n]++;
+        } else {
+            if (n > max_imp)
+                max_imp = n;
+            frecventa_impare[n]++;
+        }
     }
-  }
 
-  cout << nrTermeni << endl;
+    for (int i = 1; i <= max_imp; i++) {
+        for (int ap = 1; ap <= frecventa_impare[i]; ap++) {
+            cout << i << " ";
+        }
+    }
 
-  bacin.close();
+    for (int i = 1; i <= max_par; i++) {
+        for (int ap = 1; ap <= frecventa_pare[i]; ap++) {
+            cout << i << " ";
+        }
+    }
+    cout << endl;
+
+    bac_in.close();
+
+    cout << "\n----- END -----" << endl;
 }

@@ -1,38 +1,23 @@
-#include <cstring>
 #include <iostream>
+#include <cmath>
 
 using namespace std;
 
-int main() {
-  char text[100];
-  char result[101];
+float dist(float x1, float y1, float x2, float y2)
+{
+    float a = powf(x2 - x1, 2);
+    float b = powf(y2 - y1, 2);
+    return sqrtf(a + b);
+}
 
-  cin.getline(text, 100);
+int main()
+{
+    cout << "----- 2019-august-sn-s2-2 -----\n" << endl;
 
-  char *cuvant = strtok(text, " ");
+    float x = 0.1;
+    float y = 0.1;
+    
+    cout << dist(0, 0, x, y) << 1 << endl;
 
-  int found = 0;
-  while (cuvant) {
-    int lc = strlen(cuvant);
-    if (lc % 2 == 1) {
-      char newcuv[lc];
-      for (int i = lc - 1; i >= 0; i--) {
-        newcuv[i] = cuvant[lc - i - 1];
-      }
-      strcat(result, newcuv);
-      if (strcmp(cuvant, newcuv) != 0) {
-        found = 1;
-      }
-    } else {
-      strcat(result, cuvant);
-    }
-    strcat(result, " ");
-    cuvant = strtok(NULL, " ");
-  }
-
-  if (!found) {
-    cout << "nu exista" << endl;
-  } else {
-    cout << result << endl;
-  }
+    cout << "\n----- END -----" << endl;
 }

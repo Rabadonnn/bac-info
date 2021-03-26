@@ -1,28 +1,23 @@
-#include <cmath>
 #include <iostream>
 
 using namespace std;
 
-int main() {
-  int n = 28731;
-  int a[6][6];
+int main()
+{
+         << endl;
 
-  for (int i = 0; i < 6; i++) {
-    for (int j = 0; j < 6; j++) {
-      if (i == j) {
-        a[i][j] = 0;
-      } else if (i < j) {
-        a[i][j] = (n % (int)pow(10, i + 1)) / pow(10, i);
-      } else {
-        a[i][j] = (n % (int)pow(10, j + 1)) / pow(10, j);
-      }
-    }
-  }
-
-  for (int i = 0; i < 6; i++) {
-    for (int j = 0; j < 6; j++) {
-      cout << a[i][j] << " ";
-    }
-    cout << endl;
-  }
+    /*
+   *      4 cifre din
+   *
+   *      { 0, 1, 2, 3, 4, 5 }
+   *
+   *    1. 5432
+   *    2. 5431
+   *    3. 5430
+   *    4. 5423
+   *    5. 5421
+   *    6. 5420
+   *
+   *    7. 5413
+   */
 }

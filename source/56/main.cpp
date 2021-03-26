@@ -2,26 +2,34 @@
 
 using namespace std;
 
-void divPrimMax(unsigned n, unsigned &p) {
-  p = 1;
-  for (int i = 2; i <= n / 2; i++) {
-    if (n % i == 0) {
-      int prim = 1;
-      for (int j = 2; j <= i / 2; j++) {
-        if (i % j == 0) {
-          prim = 0;
-        }
-      }
-      if (prim && i > p) {
-        p = i;
-      }
-    }
-  }
-}
+int main()
+{
+    cout << "----- 2019-august-sn-s3-2 -----\n" << endl;
 
-int main() {
-  unsigned n = 2000;
-  unsigned p;
-  divPrimMax(n, p);
-  cout << p << endl;
+    int n;
+    cin >> n;
+
+    int v[n];
+
+    int result = 1;
+    bool done = false;
+    for (int i = 0; i < n; i++)
+    {
+        cin >> v[i];
+        if (i > 0)
+        {
+            if (v[i] == v[i - 1])
+            {
+                result++;
+            }
+            else
+            {
+                done = true;
+            }
+        }
+    }
+    
+    cout << result << endl;
+
+    cout << "\n----- END -----" << endl;
 }

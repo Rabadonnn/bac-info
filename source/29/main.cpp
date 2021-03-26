@@ -1,33 +1,67 @@
 #include <iostream>
+#include <cmath>
 
 using namespace std;
 
-void prime(unsigned n, unsigned &x, unsigned &y) {
-  x = 0;
-  y = 0;
-  for (int i = n - 1; i >= 2; i--) {
-    int prim = 1;
-    for (int j = 2; j <= i / 2; j++) {
-      if (i % j == 0) {
-        prim = 0;
-      }
+struct divizor
+{
+    int nr;
+    int mic;
+};
+
+bool isPrime(int n)
+{
+    if (n <= 1)
+    {
+        return false;
     }
-    if (prim == 1) {
-      if (y == 0) {
-        y = i;
-      } else if (x == 0) {
-        x = i;
-        break;
-      }
+
+    for (int i = 2; i < n; i++)
+    {
+        if (n % i == 0)
+        {
+            return false;
+        }
     }
-  }
+    return true;
 }
 
 int main()
 {
-  unsigned n = 49;
-  unsigned x;
-  unsigned y;
-  prime(n, x, y);
-  cout << x << " " << y << endl;
+    cout << "----- 2018-spec-s2-3 -----\n"
+         << endl;
+
+    divizor d = {12, 2};
+
+    if (isPrime(d.nr))
+    {
+        cout << "prim" << endl;
+    }
+    else if (d.nr - sqrt(d.nr) == 0)
+    {
+        cout << "patrat" << endl;
+    }
+    else
+    {
+        int min = d.nr;
+        int max = 0;
+        // there must be a better way for this though
+        for (int i = 2; i < d.nr; i++)
+        {
+            if (d.nr % i == 0)
+            {
+                if (i < min)
+                {
+                    min = i;
+                }
+                else if (i > max)
+                {
+                    max = i;
+                }
+            }
+        }
+        cout << min << " " << max << endl;
+    }
+
+    cout << "\n----- END -----" << endl;
 }

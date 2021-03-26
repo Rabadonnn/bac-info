@@ -2,26 +2,46 @@
 
 using namespace std;
 
-int kpn(unsigned a, unsigned b, unsigned k) {
-  int c = 0;
-  for (int i = a; i <= b; i++) {
-    int sd = 0;
-    for (int j = 1; j <= i; j++) {
-      if (i % j == 0) {
-        sd += j;
-      }
-    }
-    if (sd % 2 == i % 2) {
-      c++;
-      if (c == k) {
-        return i;
-      }
-    }
-  }
-  return -1;
-}
-
 int main()
 {
-  cout << kpn(27, 50, 3) << endl;
+
+    int n;
+    cin >> n;
+    
+    int m = 0;
+    // int x = 1;
+
+    // while (x <= 9)
+    // {
+        // int cp = n;
+        // while (cp != 0)
+        // {
+            // if (cp % 10 == x)
+            // {
+                // m = m * 10 + x;
+            // }
+            // cp /= 10;
+        // }
+        // x++;
+    // }
+
+    for (int x = 1; x <= 9; x++)
+    {
+        int cp = n;
+        while (cp != 0)
+        {
+            if (cp % 10 == x)
+            {
+                m = m * 10 + x;
+            }
+            cp /= 10;
+        }
+    }
+
+    cout << m << endl;
+
+    // 11
+    // 110
+    // 1100
+    // etc
 }

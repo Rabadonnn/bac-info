@@ -2,23 +2,34 @@
 
 using namespace std;
 
-int main()
+int echilibrat(int n)
 {
-  int p1 = 12;
-  int p2 = 8;
+    int parsum = 0;
+    int impsum = 0;
 
-  for (int i = 1000000; i <= 9999999; i++) {
-    int a[7];
-    int x = i;
-    int j = 0;
-    while (x) {
-      a[j++] = x % 10;
-      x /= 10;
+    while (n != 0)
+    {
+        int c = n % 10;
+        n /= 10;
+
+        if (c % 2 == 0)
+        {
+            parsum += c;
+        }
+        else
+        {
+            impsum += c;
+        }
     }
 
-    if (a[5] * a[6] == p1 && a[2] == a[3] && a[2] == a[4] && a[1] * a[0] == p2) {
-      cout << i << endl;
-    }
-  }
+    return (parsum % 2 == 0 && impsum % 2 == 1);
 }
 
+int main()
+{
+    cout << "----- 2018-spec-s3-3 -----\n" << endl;
+
+    cout << echilibrat(11211) << endl;
+
+    cout << "\n----- END -----" << endl;
+}

@@ -2,12 +2,10 @@
 
 using namespace std;
 
-void duplicare(unsigned n, unsigned &d) {
-
-}
-
 int main()
 {
-  cout << "- rx_8 -\n" << endl;
-  cout << "\n---" << endl;
+    cout << "----- 2018-august-s2-4 -----\n"
+         << endl;
+    // invata grafuri boule
+    cout << "\n----- END -----" << endl;
 }

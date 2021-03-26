@@ -1,25 +1,48 @@
 #include <iostream>
+#include <fstream>
 
 using namespace std;
 
 int main()
 {
-  int a[5][7];
+    cout << "----- 2018-spec-s3-4 -----\n"
+         << endl;
 
-  for (int i = 0; i < 5; i++) {
-    for (int j = 6; j >= 0; j--) {
-      if (i == 0 || j == 6) {
-        a[i][j] = 1;
-      } else {
-        a[i][j] = (a[i - 1][j] + a[i][j + 1]) % 10;
-      }
-    }
-  }
+    ifstream bacIn("source/2018-spec-s3-4/bac-in.txt");
 
-  for (int i = 0; i < 5; i++) {
-    for (int j = 0; j < 7; j++) {
-      cout << a[i][j] << " ";
+    int primaAparitie[10] = {0};
+    int nr = 0;
+    int lungime[10];
+    int max = 0;
+
+    int x;
+    while (bacIn >> x)
+    {
+        nr++;
+        if (primaAparitie[x] == 0)
+        {
+            primaAparitie[x] = nr;
+        }
+        else
+        {
+            lungime[x] = nr - primaAparitie[x] + 1;
+            if (lungime[x] > max)
+            {
+                max = lungime[x];
+            }
+        }
     }
-    cout << endl;
-  }
+
+    bacIn.close();
+
+    cout << max << endl;
+    for (int i = 0; i < 10; i++)
+    {
+        if (lungime[i] == max)
+        {
+            cout << i << " ";
+        }
+    }
+
+    cout << "\n----- END -----" << endl;
 }

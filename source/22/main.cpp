@@ -1,25 +1,26 @@
-#include <fstream>
 #include <iostream>
 
 using namespace std;
 
-int main() {
-  ifstream bacin("source/rx_22/bac.in");
+void f(char ch, int x)
+{
+    cout << ch;
 
-  int x;
-  int nr = -1;
-  int count = 1;
-  while (bacin >> x) {
-    if (x != nr) {
-      if (nr != -1) {
-        cout << nr << " " << count << " ";
-      }
-      nr = x;
-      count = 1;
+    if (x == 0) {
+        cout << "*";
+    } else if (ch == 'a') {
+        cout << x;
     } else {
-      count++;
+        f(ch - 1, x - 1);
     }
-  }
+}
 
-  cout << nr << " " << count << endl;
+int main()
+{
+
+    f('e', 5);
+
+
+    // x poate fi orice numar >= 5
+    // cauta cod ascii
 }

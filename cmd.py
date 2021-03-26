@@ -18,7 +18,6 @@ int main()
 
 }\
 '''
-
     os.system("mkdir source/" + project_name)
 
     with open("source/" + project_name + "/main.cpp", "w") as file:

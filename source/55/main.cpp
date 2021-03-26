@@ -2,26 +2,33 @@
 
 using namespace std;
 
-int main() {
-  char a[7][7];
-  for (int i = 0; i < 7; i++) {
-    for (int j = 0; j < 7; j++) {
-      a[i][j] = '*';
-    }
-  }
+int main()
+{
+    cout << "----- 2019-august-sn-s3-1 -----\n"
+         << endl;
 
-  for (int i = 0; i < 7; i++) {
-    for (int j = 0; j < 7; j++) {
-      if (j >= i) {
-        a[i][j] = 97 + j - i;
-      }
-    }
-  }
+    int a = 14;
+    int b = 19;
 
-  for (int i = 0; i < 7; i++) {
-    for (int j = 0; j < 7; j++) {
-      cout << a[i][j] << " ";
+    int result = 0;
+    for (int i = b; i >= a; i--)
+    {
+        int p = 1;
+        for (int j = 1; j <= i; j++)
+        {
+            if (j % i == 0 && j % 2 == 0)
+            {
+                p *= j;
+            }
+        }
+        if (p >= i)
+        {
+            result = i;
+            break;
+        }
     }
-    cout << endl;
-  }
+    
+    cout << result << endl;
+
+    cout << "\n----- END -----" << endl;
 }

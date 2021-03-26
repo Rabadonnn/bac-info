@@ -1,24 +1,27 @@
-#include <cstring>
 #include <iostream>
 
 using namespace std;
 
-int main() {
-  char s[20];
-  char t[20];
+struct eveniment
+{
+    struct
+    {
+        int zi;
+        int luna;
+    } data;
 
-  strcpy(s, "sanataTEA");
+    int id;
+};
 
-  cout << strlen(s);
+int main()
+{
+    cout << "----- 2019-sim-s2-2 -----\n" << endl;
 
-  int i = 0;
-  while (i < strlen(s)) {
-    if (s[i] == 'a') {
-      strcpy(t, s + i + 1);
-      strcpy(s + i, t);
-    } else {
-      i++;
-    }
-  }
-  cout << s;
+    eveniment e = { 13, 9, 1 };
+
+    cout << e.data.zi << endl;
+    cout << e.data.luna << endl;
+    cout << e.id<< endl;
+
+    cout << "\n----- END -----" << endl;
 }

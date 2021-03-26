@@ -2,18 +2,54 @@
 
 using namespace std;
 
-int transformareBaza10(unsigned b, unsigned n) {
-  int s = 0;
-  int i = 0;
-  while (n) {
-    int c = n % 10;
-    n /= 10;
+int main()
+{
+         << endl;
 
-    int p = c * (pow(b, i));
-    s += p;
-    i++;
-  }
-  return s;
+    int n;
+    int a;
+    cin >> n;
+    cin >> a;
+
+    int nr = 0;
+    int i = 1;
+
+    while (i <= n)
+    {
+        int b;
+        cin >> b;
+        int c = 0;
+        while (b % 2 == 0)
+        {
+            b /= 2;
+            c++;
+        }
+        if (c == a)
+        {
+            nr++;
+        }
+        i++;
+    }
+
+    // a: 2
+    // b: orice numar de forma 4k din interval
+
+    for (int i = 1; i <= n; i++)
+    {
+        int b;
+        cin >> b;
+        int c = 0;
+        while (b % 2 == 0)
+        {
+            b /= 2;
+            c++;
+        }
+        if (c == a)
+        {
+            nr++;
+        }
+        i++;
+    }
+
+    cout << nr << endl;
 }
-
-int main() { cout << transformareBaza10(2, 10010) << endl; }

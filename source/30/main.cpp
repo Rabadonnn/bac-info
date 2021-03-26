@@ -4,26 +4,21 @@ using namespace std;
 
 int main()
 {
-  int m = 2;
-  int n = 3;
-  int a[m][n];
+    cout << "----- 2018-spec-s2-4 -----\n"
+         << endl;
 
-  int x = 0;
-  for (int i = m - 1; i >= 0; i--) {
-    for (int j = n - 1; j >= 0; j--) {
-      int p = x * x;
-      while (x * x % 2 == 0) {
-        x++;
-      }
-      x++;
-      a[i][j] = p;
-    }
-  }
+    int a[10][10];
 
-  for (int i = 0; i < m; i++) {
-    for (int j = 0; j < n; j++) {
-      cout << a[i][j] << " ";
+    // foarte destepti baietii care fac subiect, vectorii incep de la 1 dupa ei
+    for (int i = 1; i <= 9; i++)
+    {
+        for (int j = 1; j <= 9; j++)
+        {
+            a[i][j] = i < j ? i : j;
+            cout << a[i][j] << " ";
+        }
+        cout << endl;
     }
-    cout << endl;
-  }
+
+    cout << "\n----- END -----" << endl;
 }

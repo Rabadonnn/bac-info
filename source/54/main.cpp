@@ -1,28 +1,19 @@
-#include <fstream>
 #include <iostream>
 
 using namespace std;
 
-int main() {
-  ifstream bacin("source/54/bac.txt");
-  int a = 9;
-  int b = 9;
-  int found = 0;
-  int x;
-  while (bacin >> x) {
-    if (x / 10 != 0 && x / 100 == 0) {
-      found = 1;
-      if (x > b) {
-        b = x;
-      }
-    }
-  }
-  b++;
-  if (!found) {
-    cout << "nu exista" << endl;
-  } else {
-    cout << a << " " << b << endl;
-  }
+int main()
+{
+    cout << "----- 2019-august-sn-s2-3 -----\n" << endl;
 
-  bacin.close();
+    for (int i = 1; i <= 5; i++)
+    {
+        for (int j = 6 - i; j >= 1; j--)
+        {
+            cout << j << " ";
+        }
+        cout << endl;
+    }
+
+    cout << "\n----- END -----" << endl;
 }

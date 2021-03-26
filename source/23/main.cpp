@@ -2,17 +2,18 @@
 
 using namespace std;
 
+int resturi(int n, int x, int y, int r)
+{
+    int result = 0;
+
+    for (int i = 1; i <= n; i++) {
+        // ne permitem
+        result += (i % x == r && i % y == r) ? 1 : 0;
+    }
+
+    return result;
+}
+
 int main()
 {
-  int w = 5;
-  int h = 4;
-  int a[h][w];
-
-  for (int i = 0; i < h; i++) {
-    for (int j = 0; j < w; j++) {
-      a[i][j] = (w - j) * h - i;
-      cout << a[i][j] << " ";
-    }
-    cout << endl;
-  }
 }

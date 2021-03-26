@@ -2,25 +2,40 @@
 
 using namespace std;
 
-void divPrimMax(unsigned n, int &p) {
-  for (int i = n; i >= 2; i--) {
-    if (n % i == 0) {
-      int prim = 1;
-      for (int j = 2; j <= i / 2; j++) {
-        if (i % j == 0) {
-          prim = 0;
-        }
-      }
-      if (prim) {
-        p = i;
-        break;
-      }
+int f1(int x, int y)
+{
+    if (x % 2 != 0 || y % 2 != 0)
+    {
+        return 1;
     }
-  }
+    else
+    {
+        return 2 * f1(x / 2, y / 2);
+    }
 }
 
-int main() {
-  int p;
-  divPrimMax(2000, p);
-  cout << p << endl;
+int f2(int x, int y)
+{
+    if (x == y)
+    {
+        return x;
+    }
+    else
+    {
+        if (x > y)
+        {
+            return f2(x - y, y);
+        }
+        else
+        {
+            return f2(x, y - x);
+        }
+    }
+}
+
+int main()
+{
+
+    // b
+    cout << f2(30, 50) << endl;
 }

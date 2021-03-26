@@ -2,24 +2,39 @@
 
 using namespace std;
 
-int cifreImpare(unsigned n) {
-  int x = 0;
-  int cifre = 0;
-  while (n) {
-    int c = n % 10;
-    n /= 10;
-    if (c % 2 == 0) {
-      x += c * pow(10, cifre);
-      cifre++;
-    }
-  }
-  if (x == 0) {
-    return -1;
-  }
-  return x;
-}
-
 int main()
 {
-  cout << cifreImpare(12345) << endl;
+    cout << "----- 2018-august-s2-5 -----\n"
+         << endl;
+
+    unsigned int n;
+    cin >> n;
+
+    unsigned int numbers[n];
+    for (int i = 0; i < n; i++) {
+        cin >> numbers[i];
+    }
+
+    unsigned int mat[n][n];
+
+    cout << endl;
+
+    for (unsigned int i = 0; i < n; i++) {
+        for (unsigned int j = 0; j < n; j++) {
+            if (j % 2 == 0) {
+                mat[j][i] = numbers[n - i - 1];
+            } else {
+                mat[j][i] = numbers[i];
+            }
+        }
+    }
+
+    for (unsigned int i = 0; i < n; i++) {
+        for (unsigned int j = 0; j < n; j++) {
+            cout << mat[j][i] << " ";
+        }
+        cout << endl;
+    }
+
+    cout << "\n----- END -----" << endl;
 }

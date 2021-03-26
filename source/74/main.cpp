@@ -2,23 +2,44 @@
 
 using namespace std;
 
-int main() {
-  int n;
-  int k;
-  cin >> n >> k;
-  int p = 1;
+int main()
+{
+    cout << "----- 2019-sim-s2-1 -----\n" << endl;
 
-  while (n > 0) {
-    int c = n % 10;
-    if (k > 0) {
-      if (c % 2 == 1) {
-        p *= c;
-      }
+    int a;
+    int b;
+    int k;
+
+    cin >> a >> b >> k;
+
+    int pm = 0;
+    int y = 0;
+    int i = b;
+
+    while (i >= a) {
+        int x = i;
+        int p = 0;
+
+        while (x % k == 0) {
+            x /= k;
+            p++;
+        }
+
+        if (p != 0 && (p < pm || pm == 0)) {
+            pm = p;
+            y = i;
+        }
+
+        i--;
     }
 
-    n /= 10;
-    k--;
-  }
+    // 2016 2019
 
-  cout << p << endl;
+    for (i = b; i >= a; i--) {
+        // restu
+    }
+
+    cout << y;
+
+    cout << "\n----- END -----" << endl;
 }

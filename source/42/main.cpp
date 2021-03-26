@@ -1,21 +1,43 @@
+#include <cstring>
 #include <iostream>
 
 using namespace std;
 
 int main()
 {
-  int a[4][5];
+    cout << "----- bac -----\n"
+         << endl;
 
-  for (int i = 0; i < 4; i++) {
-    for (int j = 4; j >= 0; j--) {
-      a[i][j] = (5 - j) + (5 * i);
-    }
-  }
+    /*
+   * daca lungimea lui b are mai mult de 3 caracter
+   * atunci memoram in a ultimele 3 caractere
+   * iar la sfarsitul lui a trebuie sa adaugam caracterul nul
+   * \0
+   * \0 determina sfarsitul unui sir de caracter in c
+   */
 
-  for (int i = 0; i < 4; i++) {
-    for (int j = 0; j < 5; j++) {
-      cout << a[i][j] << " ";
+    char b[] = "centaur";
+    char a[20];
+
+    int len_b = strlen(b);
+
+    int a_index = 0;
+    if (len_b > 3) {
+        for (int i = len_b - 3; i < len_b; i++) {
+            a[a_index++] = b[i];
+
+            /*
+       *  aste e echivalent cu
+       *  a[a_index] = b[i];
+       *  a_index++;
+       */
+        }
+        a[a_index] = '\0';
+    } else {
+        strcpy(a, "nedeterminat");
     }
-    cout << endl;
-  }
+
+    cout << a << endl;
+
+    cout << "\n----- END -----" << endl;
 }

@@ -2,31 +2,26 @@
 
 using namespace std;
 
-void produs(unsigned n, int &p) {
-  int frec[10] = {0};
-  while (n) {
-    int c = n % 10;
-    n /= 10;
-    if (c % 2 == 0) {
-      frec[c]++;
-    }
-  }
-  p = 1;
-  int found = 0;
-  for (int i = 0; i < 9; i++) {
-    if (frec[i] != 0) {
-      found = 1;
-      p *= i;
-    }
-  }
-  if (!found) {
-    p = -1;
-  }
-}
+struct punct {
+    int x;
+    int y;
+} p;
 
-int main() {
-  unsigned n = 122325;
-  int p;
-  produs(n, p);
-  cout << p << endl;
+struct cerc {
+    struct punct centru;
+    float raza;
+} c;
+
+int main()
+{
+         << endl;
+
+    c.centru.x = 10;
+    c.centru.y = 15;
+    p.x = 10;
+    p.y = 15;
+
+    int expresie = c.centru.x == p.x && c.centru.y == p.y;
+
+    cout << expresie << endl;
 }
