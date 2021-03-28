@@ -5,6 +5,9 @@ using namespace std;
 int main()
 {
    /*
+  *      functii string
+  *      
+  *      
   *      strlen(char *sir) -> (int) returneaza lungimea sirului
   *
   *      strcpy(char *sursa, char *destinatie) -> copiaza sirul sursa in sirul * destinatie

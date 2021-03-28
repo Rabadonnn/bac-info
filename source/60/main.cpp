@@ -4,9 +4,7 @@ using namespace std;
 
 int main()
 {
-         << endl;
-
-    // 3b,
+    // 3b
     // function strchr(c, sir) returneaza 1 daca c este inclus in sir
     // nu e d pentru ca d spune:
     // x == a || x == e || x == i etc

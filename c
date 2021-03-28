@@ -8,6 +8,10 @@ def compile_project(project_name):
     os.system(command)
 
 def new_project(project_name):
+    path = "source/" + project_name + "/main.cpp"
+    if os.path.exists(path):
+        print("\033[91mfile already exists")
+        return
     program_string = '''\
 #include <iostream>
 
@@ -20,7 +24,7 @@ int main()
 '''
     os.system("mkdir source/" + project_name)
 
-    with open("source/" + project_name + "/main.cpp", "w") as file:
+    with open(path, "w") as file:
         file.write(program_string)
 
 if sys.argv[1] == "-c":
