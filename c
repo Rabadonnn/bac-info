@@ -17,8 +17,7 @@ def new_project(project_name):
 
 using namespace std;
 
-int main()
-{
+int main() {
 
 }\
 '''

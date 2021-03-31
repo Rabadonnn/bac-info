@@ -2,6 +2,8 @@
 
 using namespace std;
 
+// testul 4 antrenament 2020 s2 ex1
+
 int main()
 {
   int n;

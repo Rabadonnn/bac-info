@@ -2,6 +2,8 @@
 
 using namespace std;
 
+// testul 4 antrenament 2020 s3 ex1
+
 void generatoare(unsigned n) {
   int found = 0;
 

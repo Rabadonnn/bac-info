@@ -3,6 +3,8 @@
 
 using namespace std;
 
+// testul 4 antrenament 2020 s3 ex3
+
 int main() {
   fstream bacin("source/290/bac.in");
   int x;
