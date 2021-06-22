@@ -26,8 +26,7 @@ int main() {
     with open(path, "w") as file:
         file.write(program_string)
 
-if sys.argv[1] == "-c":
+if sys.argv[1] == "c":
     compile_project(sys.argv[2])
-elif sys.argv[1] == "-n":
+elif sys.argv[1] == "n":
     new_project(sys.argv[2])
-
